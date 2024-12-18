@@ -27,24 +27,43 @@ down.
 
 The data contains industry trends, investment insights and individual company information.
 There are 48 columns/features. Some of the features are:
+
 ● age_first_funding_year – quantitative
+
 ● age_last_funding_year – quantitative
+
 ● relationships – quantitative
+
 ● funding_rounds – quantitative
+
 ● funding_total_usd – quantitative
+
 ● milestones – quantitative
+
 ● age_first_milestone_year – quantitative
+
 ● age_last_milestone_year – quantitative
+
 ● state – categorical
+
 ● industry_type – categorical
+
 ● has_VC – categorical
+
 ● has_angel – categorical
+
 ● has_roundA – categorical
+
 ● has_roundB – categorical
+
 ● has_roundC – categorical
+
 ● has_roundD – categorical
+
 ● avg_participants – quantitative
+
 ● is_top500 – categorical
+
 ● status(acquired/closed) – categorical (the target variable, if a startup is ‘acquired’ by
 some other organisation, means the startup succeed)
 
@@ -81,6 +100,7 @@ based on a series of rules learned from the data. It is a straightforward and
 interpretable model that can handle both categorical and numerical data.
 Decision Trees are prone to overfitting, which means they can perform very
 well on the training data but poorly on unseen data.
+
 **Random Forest:** Random Forest is an ensemble learning method that builds
 multiple Decision Trees and combines their predictions. It reduces overfitting
 compared to a single Decision Tree and generally provides more robust
@@ -91,6 +111,7 @@ sensitive to hyperparameter tuning.
 
 ● To provide a user-friendly interface for making predictions, we created a
 simple frontend using the Gradio library in Python.
+
 ● The frontend allowed users to input startup information and receive
 predictions based on the trained machine learning models.
 
